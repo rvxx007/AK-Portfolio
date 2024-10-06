@@ -1,0 +1,393 @@
+{
+  "_id": {
+    "$oid": "670242bd04d7a0bf763d67ed"
+  },
+  "name": "Akash kawale",
+  "email": "akashkawle0@gmail.com",
+  "ph": 939577131,
+  "img": "ak",
+  "bg": "bg",
+  "aboutTitle": "About Me",
+  "about": "I was born in Nagpur, Maharashtra, and currently live in Hydrabad, Telangana. My journey into frontend/backend/mernstack development began in 2023, and since then, I’ve fallen in love with everything related to the MERN stack (MongoDB, Express.js, React, Node.js).",
+  "initials": "AK",
+  "headtitle": "Hello , I'm a FullStack & MernStack Developer",
+  "headsub": "Im a dedicated full-stack developer with a strong foundation in both front-end and back-end technologies. My expertise lies in building robust and scalable web applications using the MERN stack (MongoDB, Express.js, React, Node.js). I&apos;m passionate about crafting intuitive user interfaces and efficient server-side logic.",
+  "skills": [
+    {
+      "blockId": "fred",
+      "headTitle": "Frontend",
+      "Obj": [
+        {
+          "img": "htmlImg",
+          "title": "HTML",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67ef"
+          }
+        },
+        {
+          "img": "cssImg",
+          "title": "CSS",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67f0"
+          }
+        },
+        {
+          "img": "jsImg",
+          "title": "JavaScript",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67f1"
+          }
+        },
+        {
+          "img": "reactImg",
+          "title": "React",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67f2"
+          }
+        },
+        {
+          "img": "bootstrapImg",
+          "title": "BootStrap",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67f3"
+          }
+        },
+        {
+          "img": "twCSSImg",
+          "title": "TailwindCSS",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67f4"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "670242bd04d7a0bf763d67ee"
+      }
+    },
+    {
+      "blockId": "bked",
+      "headTitle": "Backend",
+      "Obj": [
+        {
+          "img": "nodeImg",
+          "title": "Node.js",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67f6"
+          }
+        },
+        {
+          "img": "expressImg",
+          "title": "Express.js",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67f7"
+          }
+        },
+        {
+          "img": "mongoImg",
+          "title": "MongoDB",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67f8"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "670242bd04d7a0bf763d67f5"
+      }
+    }
+  ],
+  "tools": [
+    {
+      "blockId": "devTl",
+      "headTitle": "Developement Tools",
+      "Obj": [
+        {
+          "img": "AndStudImg",
+          "title": "Android Studio",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67fa"
+          }
+        },
+        {
+          "img": "VsCodeImg",
+          "title": "VsCode",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67fb"
+          }
+        },
+        {
+          "img": "intelijImg",
+          "title": "Intelij Ultimate",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67fc"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "670242bd04d7a0bf763d67f9"
+      }
+    },
+    {
+      "blockId": "disTl",
+      "headTitle": "Design Tools",
+      "Obj": [
+        {
+          "img": "canvaImg",
+          "title": "Canva",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67fe"
+          }
+        },
+        {
+          "img": "blenderImg",
+          "title": "Blender",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d67ff"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "670242bd04d7a0bf763d67fd"
+      }
+    },
+    {
+      "blockId": "aiTl",
+      "headTitle": "AI Tools",
+      "Obj": [
+        {
+          "img": "chatgptImg",
+          "title": "ChatGPT",
+          "url": "https://chatgpt.com/",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6801"
+          }
+        },
+        {
+          "img": "geminiImg",
+          "title": "Gemini",
+          "url": "https://gemini.google.com/app",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6802"
+          }
+        },
+        {
+          "img": "msBingAIImg",
+          "title": "MS Bing AI",
+          "url": "https://www.bing.com/images/create",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6803"
+          }
+        },
+        {
+          "img": "msDesignerImg",
+          "title": "MS Designer",
+          "url": "https://designer.microsoft.com/",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6804"
+          }
+        },
+        {
+          "img": "msCopilot",
+          "title": "MS Copilot",
+          "url": "https://copilot.microsoft.com/",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6805"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "670242bd04d7a0bf763d6800"
+      }
+    },
+    {
+      "blockId": "diaTl",
+      "headTitle": "Diagramming Tools",
+      "Obj": [
+        {
+          "img": "drawio",
+          "title": "Draw.io",
+          "url": "https://app.diagrams.net/",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6807"
+          }
+        },
+        {
+          "img": "excalidraw",
+          "title": "ExcaliDraw",
+          "url": "https://excalidraw.com/",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6808"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "670242bd04d7a0bf763d6806"
+      }
+    },
+    {
+      "blockId": "hdTl",
+      "headTitle": "Hosting & Deployment Tools",
+      "Obj": [
+        {
+          "img": "gitImg",
+          "title": "Git",
+          "url": "#",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d680a"
+          }
+        },
+        {
+          "img": "githubImg",
+          "title": "GitHub",
+          "url": "https://github.com/rvxx007",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d680b"
+          }
+        },
+        {
+          "img": "netlifyImg",
+          "title": "Netlify",
+          "url": "https://www.netlify.com/",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d680c"
+          }
+        },
+        {
+          "img": "renderImg",
+          "title": "Render",
+          "url": "https://render.com/",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d680d"
+          }
+        },
+        {
+          "img": "vercelImg",
+          "title": "Vercel",
+          "url": "https://vercel.com/",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d680e"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "670242bd04d7a0bf763d6809"
+      }
+    }
+  ],
+  "serviceObj": [
+    {
+      "idblock": "fe-dev",
+      "headtitle": "Frontend Developement",
+      "description": "Create Frontend web applications using the HTML, CSS, JS , React, TailwindCSS, BootStrap .",
+      "Obj": [
+        {
+          "img": "htmlImg",
+          "title": "HTML",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6810"
+          }
+        },
+        {
+          "img": "cssImg",
+          "title": "CSS",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6811"
+          }
+        },
+        {
+          "img": "jsImg",
+          "title": "JavaScript",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6812"
+          }
+        },
+        {
+          "img": "reactImg",
+          "title": "React",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6813"
+          }
+        },
+        {
+          "img": "twCSSImg",
+          "title": "TailwindCSS",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6814"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "670242bd04d7a0bf763d680f"
+      }
+    },
+    {
+      "idblock": "de-dev",
+      "headtitle": "Backend Developement",
+      "description": "Create Backend applications using the Node.js, Express.js(REST API), MongoDB.",
+      "Obj": [
+        {
+          "img": "nodeImg",
+          "title": "Node.js",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6816"
+          }
+        },
+        {
+          "img": "expressImg",
+          "title": "Express.js",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6817"
+          }
+        },
+        {
+          "img": "mongoImg",
+          "title": "MongoDB",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d6818"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "670242bd04d7a0bf763d6815"
+      }
+    },
+    {
+      "idblock": "ms-dev",
+      "headtitle": "MernStack Developement",
+      "description": "Create web applications using the MERN stack (MongoDB, Express.js, React, Node.js).",
+      "Obj": [
+        {
+          "img": "mongoImg",
+          "title": "MongoDB",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d681a"
+          }
+        },
+        {
+          "img": "expressImg",
+          "title": "Express.js",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d681b"
+          }
+        },
+        {
+          "img": "reactImg",
+          "title": "React",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d681c"
+          }
+        },
+        {
+          "img": "nodeImg",
+          "title": "Node.js",
+          "_id": {
+            "$oid": "670242bd04d7a0bf763d681d"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "670242bd04d7a0bf763d6819"
+      }
+    }
+  ],
+  "__v": 0
+}
