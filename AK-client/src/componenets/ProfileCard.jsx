@@ -1,7 +1,9 @@
 import { useContext, useState } from "react";
+import ak from '../assets/ak.png'
 import AppContext from "../contexts/AppContext.jsx";
 
-const ProfileCard = ({ idAb, btnName }) => {
+const ProfileCard = (prop) => {
+  const { idAb, btnName } = prop
   const akObj = useContext(AppContext);
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -40,6 +42,7 @@ const ProfileCard = ({ idAb, btnName }) => {
               className="w-[10rem] h-[10rem] mx-auto my-auto rounded-3xl"
               src={`https://ak-portfolio-server.onrender.com${akObj.logo}`}
               alt="logo"
+              onError={ak}
             />
             <div className="w-full mx-auto my-auto flex flex-col justify-evenly items-center">
               <h1 className="text-3xl text-black dark:text-white font-bold">{akObj.name}</h1>
@@ -51,7 +54,7 @@ const ProfileCard = ({ idAb, btnName }) => {
         {!isExpanded && (
           <img
             id="pp"
-            className="h-[422px] grayscale mx-auto "
+            className="w-[500px] h-[500px] grayscale mx-auto "
             src={`https://ak-portfolio-server.onrender.com${akObj.img}`}
             alt="Akash kawale"
           />

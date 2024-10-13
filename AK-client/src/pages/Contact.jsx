@@ -1,5 +1,3 @@
-
-
 import { useState } from "react"
 import  gitPic from '../assets/git.svg'
 import  linkedInPic from '../assets/linkedin.svg'
@@ -27,6 +25,7 @@ const Contact = () => {
 
     function onclear(){
         setInputValue(()=>{
+            
             return {
                 name:"",
                 email:"",
@@ -38,6 +37,15 @@ const Contact = () => {
     const handleFormSubmit = (e)=>{
         e.preventDefault();
         setIsLoading(true);
+
+        if( (!inputValue.name || inputValue.name==="") && 
+            (!inputValue.email || inputValue.email==="") && 
+            (!inputValue.phone || inputValue.phone==="") && 
+            (!inputValue.descp || inputValue.descp==="")){
+                setIsLoading(false)
+                return toast.error("All Feilds Are Required.")
+        }
+
         const data = JSON.stringify({
             name:inputValue.name.trim(),
             email:inputValue.email.trim(),
@@ -45,9 +53,9 @@ const Contact = () => {
             descp:inputValue.descp.trim(),
             created_at:new Date().toLocaleString().toString()
         });
+        
 
         const config={
-            url:"https://ak-portfolio-server.onrender.com/api/v1/contact/post/create",
             method:"post",
             maxBodyLength:Infinity,
             redirect: "follow",
@@ -68,7 +76,7 @@ const Contact = () => {
 //         console.log(error);
 //     })
 
-        fetch(config)
+        fetch("https://ak-portfolio-server.onrender.com/api/v1/contact/post/create",config)
             .then((response) => response.json())
             .then((result) => {
                 if(result.success === true){
@@ -77,6 +85,7 @@ const Contact = () => {
                     return toast.error(result.msg)
                 }
             }).catch((error)=>{
+                console.log(error);
             return toast.error(error);
         }).finally(()=>{
             onclear();

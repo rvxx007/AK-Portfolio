@@ -8,8 +8,11 @@ import {useContext} from "react";
 import AppDarkModeContext from "../contexts/AppDarkModeContext.jsx";
 import Footer from "../componenets/Footer.jsx";
 
+import NoInternet from "../componenets/NoInternet.jsx";
+
 
 const Home= ()=>{
+    // eslint-disable-next-line no-unused-vars
     const [isDarkMode, setIsDarkMode] = useContext(AppDarkModeContext);
 
     if(navigator.onLine === true){
@@ -33,7 +36,7 @@ const Home= ()=>{
           }else{
         return(
             <>
-                    <h1>Ofline</h1>
+                   <NoInternet/>
             </>
         )
 }

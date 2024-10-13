@@ -2,7 +2,9 @@ import { useContext } from 'react';
 import AppContext from '../contexts/AppContext.jsx';
 import AppDarkModeContext from "../contexts/AppDarkModeContext.jsx";
 
+
 const Header = () => {
+
   const akObj = useContext(AppContext);
 
   const [isDarkMode, setIsDarkMode] = useContext(AppDarkModeContext)
