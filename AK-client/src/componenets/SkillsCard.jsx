@@ -1,10 +1,9 @@
 import SM from "./SM.jsx";
-import {useId} from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 const SkillsCard = (prop) => {
     const {blockId, headTitle,skillDetails}= prop
-
-    const uniqueKey = useId()
+ 
     return (
         <>
                     <section id={blockId} className=' border-2 dark:bg-secondary border-gray-150 dark:border-gray-900 shadow-xl rounded-2xl my-5 lg:p-5'>
@@ -17,7 +16,7 @@ const SkillsCard = (prop) => {
                                      className="w-full flex justify-evenly items-center gap-3 flex-wrap lg:flex-nowrap py-3 ">
                                 {
                                     skillDetails.map((items)=>(<>
-                                            <SM key={items._id.$oid} imgs={items.img} title={items.title}/>
+                                            <SM key={uuidv4()} imgs={items.img} title={items.title}/>
                                     </>))
                                 }
                                 </div>

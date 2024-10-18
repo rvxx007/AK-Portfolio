@@ -23,7 +23,7 @@ const createContactServ = async(req, res)=>{
         const result = await saveData
         console.log(result);
         
-        if(!result){
+          if(!result){
             return resFunc(res,400, false,"Server Error, Unable to Save Data",null);
         }else{
             return resFunc(res,200, true,"Data Saved Successfully",null);

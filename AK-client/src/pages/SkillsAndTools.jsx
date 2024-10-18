@@ -1,41 +1,43 @@
 import SkillsCard from "../componenets/SkillsCard.jsx";
-import {useContext, useId} from "react";
+import {useContext} from "react";
 import AppContext from "../contexts/AppContext.jsx";
+import { v4 as uuidv4 } from 'uuid';
 
 const SkillsAndTools = () => {
 
-    const unique = Math.ceil(Math.random().toFixed(4)*10000);
-    const uid= useId();
+   
     const akObj = useContext(AppContext);
-
+    const {skills = [] , tools = []} = akObj
     return (
         <section id='skills&tools' className=' h-full container mx-auto bg-white dark:bg-primary my-5 py-10 dark:text-white rounded-2xl shadow-xl'>
             <article id='Skills' className='mx-auto px-5'>
                 <header>
                     <h1 className='text-center my-5 mx-auto text-3xl font-bold '>Skills</h1>
                 </header>
-                {akObj.skills.map((item) => (
+                {(!skills?<>Loading...</>:skills.map((item) => (
                     <SkillsCard
-                        key={`skills-${uid}-`+item._id.$oid}
+                        key={`skills-${uuidv4()}`}
                         blockId={item.blockId}
                         headTitle={item.headTitle}
                         skillDetails={item.Obj} // Assuming Obj contains skill details
                     />
-                ))}
+                )))}
             </article>
             <article id='Tools' className='mx-auto py-2 px-5'>
                 <header>
                     <h1 className='text-center my-5 mx-auto text-3xl font-bold '>Tools</h1>
                 </header>
 
-                {akObj.tools.map((item) => (
+
+
+                {(!tools?<>Loading...</>:tools.map((item) => (
                     <SkillsCard
-                        key={`tools-${uid}`}
+                        key={`tools-${uuidv4()}`}
                         blockId={item.blockId}
                         headTitle={item.headTitle}
                         skillDetails={item.Obj} // Assuming Obj contains skill details
                     />
-                ))}
+                )))}
             </article>
         </section>
     );

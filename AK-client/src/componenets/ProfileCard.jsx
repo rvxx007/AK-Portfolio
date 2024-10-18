@@ -40,7 +40,7 @@ const ProfileCard = (prop) => {
           <>
             <img
               className="w-[10rem] h-[10rem] mx-auto my-auto rounded-3xl"
-              src={`https://ak-portfolio-server.onrender.com${akObj.logo}`}
+              src={`https://ak-portfolio-server.onrender.com${(!akObj.logo?"":akObj.logo)}`}
               alt="logo"
               onError={ak}
             />

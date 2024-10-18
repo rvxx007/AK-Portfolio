@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
 import SM from "./SM.jsx";
-import {useId} from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 const ServicesCard = ({ headtitle, description, Obj }) => {
-
-    const uniqueBlock = useId()
 
     return (
         <section className="w-full border-2 dark:bg-secondary border-gray-150 dark:border-gray-900 shadow-xl rounded-2xl my-5 p-5">
@@ -14,11 +12,11 @@ const ServicesCard = ({ headtitle, description, Obj }) => {
                     <p className=" text-gray-500 text-pretty mx-5 dark:text-subtitletxtcol text-pretty font-semibold">{description}</p>
                 </div>
                 <div className="w-full flex  flex-wrap justify-evenly items-center gap-4 my-5">
-                    <div key={uniqueBlock}
+                    <div 
                          className="w-full flex justify-evenly items-center flex-wrap   gap-3 ">
                         {Obj.map((item) => (
 
-                            <SM key={`srv-${item._id.$oid}`} imgs={item.img} title={item.title}/>
+                            <SM key={`srv-${uuidv4()}`} imgs={item.img} title={item.title}/>
 
                             ))}
                     </div>

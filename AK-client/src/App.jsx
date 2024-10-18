@@ -4,7 +4,7 @@ import Home from './pages/Home.jsx';
 import AppContext from './contexts/AppContext.jsx';
 import AppDarkModeContext from "./contexts/AppDarkModeContext.jsx";
 import {useEffect, useState} from "react";
-import Loader from './assets/loader0.svg'
+
 import Error from './pages/Error.jsx';
 import { toast } from 'react-toastify';
 
@@ -412,8 +412,9 @@ import { toast } from 'react-toastify';
 function App() {
 
 
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(true)
   const [akObj, setAkObj] = useState({})
+
 
   useEffect(()=>{
     fetch("https://ak-portfolio-server.onrender.com/api/v1/ak/get/ak")

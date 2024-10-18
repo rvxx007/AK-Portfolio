@@ -16,6 +16,7 @@ const Home= ()=>{
     const [isDarkMode, setIsDarkMode] = useContext(AppDarkModeContext);
 
     if(navigator.onLine === true){
+        
                 return (
                     <>
                             <main

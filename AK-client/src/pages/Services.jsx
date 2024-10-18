@@ -1,13 +1,15 @@
 import ServicesCard from "../componenets/ServicesCard.jsx";
-import {useContext, useId} from "react";
+import {useContext} from "react";
 import AppContext from "../contexts/AppContext.jsx"; // Use PascalCase for directories
+import { v4 as uuidv4 } from 'uuid';
+
 
 const Services = () => { // Use destructuring for props
 
     const akObj = useContext(AppContext)
-    const uniqueId = useId();
+
     // Consider destructuring akObj.serviceObj for cleaner access
-    const { serviceObj } = akObj;
+    const { serviceObj=[] } = akObj;
 
     return (
         <>
@@ -19,15 +21,15 @@ const Services = () => { // Use destructuring for props
                         </h1>
                     </header>
 
-                    {serviceObj.map((item) => (
+                    {(!serviceObj?<>Loading...</>:serviceObj.map((item) => (
                         <ServicesCard
-                            key={`services-${item._id.$oid}`} // Use template literals for string concatenation
+                            key={`services-${item._id,uuidv4()}`} // Use template literals for string concatenation
                             idblock={item.idblock}
                             headtitle={item.headTitle}
                             description={item.description}
                             Obj={item.Obj}
                         />
-                    ))}
+                    )))}
                 </main>
             </section>
         </>
