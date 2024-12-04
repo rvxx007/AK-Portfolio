@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  width: 100dvw;
+  scroll-behavior: smooth;
+  @apply bg-bgDark;
+}
+
+
+/* -------------------------------------------------------------- */
+                        /* Custom Scrollbar */
+/* -------------------------------------------------------------- */
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-track{
+  background: #1D1D1D;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#1D1D1D,#121212,#BB86FC,#BB86FC,#121212,#1D1D1D);
+  filter: brightness(100%);
+}
+/* -------------------------------------------------------------- */
