@@ -17,7 +17,7 @@ app.use(express.static('./public'));
 // Multer storage configuration
 const storage = multer.diskStorage({
     destination: (req, file , cb)=>{
-        cb(null , './public/upload/contact/');
+        cb(null , './public/upload/'+req.folder);
     },
     filename: (req, file, cb) => {
         cb(null, "img-"+Date.now() + '-' + file.originalname)
@@ -42,7 +42,7 @@ app.post('/upload',upload.single('image'),async(req, res)=>{
             res.status(200).json({
                 success: true,
                 msg:"Uploaded Successfully",
-                filePath:"/upload/contact/"+fileName
+                filePath:"/upload/"+req.folder+fileName
             });
             } catch (error) {
                res.status(501).json({
