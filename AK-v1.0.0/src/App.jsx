@@ -11,11 +11,10 @@ function App() {
   const [splashScreen, setSplashScreen] = useState(true);
   const [isOnline, setIsOnline] = useState(navigator.onLine);
   const [ak, setAk] = useState({});
-
  
   async function fetchData(){
     if(isOnline === true){
-    await axios.get("http://localhost:4224/api/v1/ak/get",{
+    await axios.get("https://ak-portfolio-server.onrender.com/api/v1/ak/get",{
         maxBodyLength:Infinity,
         redirect:"follow",
         headers:{"Content-Type":"application/json"}

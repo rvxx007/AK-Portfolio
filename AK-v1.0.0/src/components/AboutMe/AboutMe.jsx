@@ -15,7 +15,7 @@ const ak= useContext(AppContext);
         animate="show"
         id="aboutme" 
         className=" container h-full xl:h-dvh bg-secondaryDark flex justify-center items-center border-bgDark border-2 hover:border-primaryDark rounded-md shadow-2xl">
-        <div  className=" w-dvw my-20 lx:my-10 text-white flex flex-col gap-10 xl:flex-row justify-center items-center">
+        <div  className=" w-dvw my-20 xl:my-10 text-white flex flex-col gap-10 xl:flex-row justify-center items-center">
             
             <motion.section 
             
@@ -41,7 +41,7 @@ const ak= useContext(AppContext);
                     key={item.title}
                     className={`p-2 bg-bgDark shadow-xl rounded-md flex justify-center items-center flex-col gap-1 border-2 ${item.bc} group hover:border-primaryDark`}>
                     <div>
-                    <img src={"http://localhost:4224"+item.icon} alt={item.title} className="w-[60px] h-[60px] p-1" />
+                    <img src={import.meta.env.VITE_BE_BASE_URL+item.icon} alt={item.title} className="w-[60px] h-[60px] p-1" />
                     </div>
                     <span className={`font-bold ${item.tc} group-hover:text-primaryDark font-mono text-2xl`}>{item.title}</span>
                    </motion.div>

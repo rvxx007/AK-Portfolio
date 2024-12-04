@@ -5,6 +5,8 @@ import AppContext from "../../context/AppContext";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import axios from "axios";
+import loader from "../../assets/loader.svg"
+
 const Contact = () => {
   const ak = useContext(AppContext);
   const [isLoading, setIsLoading] = useState(false);
@@ -74,7 +76,7 @@ const Contact = () => {
     };
 
     await axios
-      .post("http://localhost:4224/api/v1/ak/msg/create", config)
+      .post(import.meta.env.VITE_BE_BASE_URL+"/api/v1/ak/msg/create", config)
       .then((resp) => {
         if(resp.data.success === true) {
             onclear();
@@ -83,7 +85,7 @@ const Contact = () => {
           return toast.error(resp.data.msg);
         }
       })
-      .catch((error) =>toast.error(error.message))
+      .catch((error) =>toast.error(error.errors.message))
       .finally(()=>setIsLoading(false))
   };
 
@@ -155,7 +157,7 @@ const Contact = () => {
                     <Link to={item.link}>
                       <img
                         className="w-[60px] h-[60px] p-1 rounded-xl "
-                        src={"http://localhost:4224" + item.icon}
+                        src={import.meta.env.VITE_BE_BASE_URL+ item.icon}
                         alt={item.title}
                       />
 
@@ -170,7 +172,11 @@ const Contact = () => {
               )}
             </div>
           </div>
-          <div className=" w-full xl:w-[50%] flex justify-center items-center ">
+          <div className=" w-full xl:w-[50%] relative flex justify-center items-center ">
+              <div className={(isLoading===true)?"absolute flex":"hidden"}>
+              <img className=" w-[150px]  h-[150px]" src={loader} alt="" />
+              </div>
+
             <form
               onSubmit={handleFormSubmit}
               className=" border-2 border-slate-950 group hover:border-primaryDark shadow-2xl rounded-xl bg-bgDark text-white mx-auto"

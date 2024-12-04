@@ -23,9 +23,9 @@ const Projects = () => {
                 <div className=" w-full my-3  px-5 py-3">
                     <h1 className="text-2xl group-hover:text-primaryDark font-bold font-mono mx-5 my-4 px-5 py-3 rounded-lg bg-secondaryLight">Mern Stack Projects</h1>
                 </div>
-                <div className=" w-full flex flex-wrap justify-evenly items-center gap-10 px-5 xl:px-10 py-3">
+                <div className=" w-full flex flex-wrap justify-start items-center gap-10 px-5 xl:px-10 py-3">
                     {
-                        (ak !== undefined ? ak.projects?.map((item)=><ProItems key={item._id} item={item} />): <h1 className="w-full text-center font-bold text-2xl">Loading</h1>)
+                        (ak !== undefined ? ak.projects?.map((item)=><ProItems proType={"mern"} key={item._id} item={item} />): <h1 className="w-full text-center font-bold text-2xl">Loading</h1>)
                     }
                 </div>
         </motion.div>
@@ -35,9 +35,9 @@ const Projects = () => {
                 <div className=" w-full my-3  px-5 py-3">
                     <h1 className="text-2xl group-hover:text-primaryDark font-bold font-mono mx-5 my-4 px-5 py-3 rounded-lg bg-secondaryLight">Frontend/Backend Projects</h1>
                 </div>
-                <div className=" w-full flex flex-wrap justify-evenly items-center gap-10 px-10 py-3">
+                <div className=" w-full flex flex-wrap justify-start items-center gap-10 px-10 py-3">
                     {
-                        (ak !== undefined ? ak.projects?.map((item)=><ProItems key={item._id} item={item} />): <h1 className="w-full text-center font-bold text-2xl">Loading</h1>)
+                        (ak !== undefined ? ak.projects?.map((item)=><ProItems proType={"febe"} key={item._id} item={item} />): <h1 className="w-full text-center font-bold text-2xl">Loading</h1>)
                     }
                 </div>
         </motion.div>
