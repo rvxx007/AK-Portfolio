@@ -179,7 +179,7 @@ const Contact = () => {
 
             <form
               onSubmit={handleFormSubmit}
-              className=" border-2 border-slate-950 group hover:border-primaryDark shadow-2xl rounded-xl bg-bgDark text-white mx-auto"
+              className="w-full md:w-[90%] lg:w-[80%] xl:w-[90%] 2xl:w-[80%] border-2 border-slate-950 group hover:border-primaryDark shadow-2xl rounded-xl bg-bgDark text-white mx-auto"
             >
               <h1 className="shadow-lg border-2 border-slate-950 group-hover:border-b-primaryDark rounded-t-xl py-4 text-center mb-5 mx-auto text-[1.8rem] font-bold text-white">
                 Contact Me

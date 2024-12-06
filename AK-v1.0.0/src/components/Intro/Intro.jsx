@@ -24,7 +24,7 @@ const childrenSectionVariants = {hidden:{opacity:0}, show:{opacity:1}}
         initial="hidden"
         animate="show"
         id="intro" 
-        className=" container h-full py-20 bg-secondaryDark flex justify-center items-center border-bgDark border-2 hover:border-primaryDark rounded-md shadow-2xl">
+        className=" container h-full py-10 bg-secondaryDark flex justify-center items-center border-bgDark border-2 hover:border-primaryDark rounded-md shadow-2xl">
         <div  className=" w-dvw text-white flex flex-col gap-10 xl:flex-row justify-center items-center">
             <motion.section 
             variants={childrenSectionVariants}
@@ -62,7 +62,7 @@ const childrenSectionVariants = {hidden:{opacity:0}, show:{opacity:1}}
             </motion.section>
             <motion.section 
             variants={childrenSectionVariants}
-             className=" w-full xl:w-[50%] my-8">
+             className=" w-full xl:w-[50%] my-8 px-5">
                 <ProfileCard/>
             </motion.section>
         </div>

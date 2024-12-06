@@ -12,7 +12,8 @@ const ProfileCard = () => {
     initial={{opacity:0, y:100}}
     animate={{opacity:1, y:0}}
     transition={{duration:1, ease:"easeOut", delay:0.30}}
-    style={{border:"1px solid black"}} className=" w-full sm:w-[500px] mx-auto flex flex-col justify-between items-center rounded-md">
+    style={{border:"1px solid black"}} 
+    className=" w-full sm:w-[500px] mx-auto flex flex-col justify-between items-center rounded-md">
                     <div className=" w-full bg-black p-4 flex flex-row justify-between items-center rounded-t-md">
                         <div >
                         <h2 id="email" className="text-md font-bold text-white hover:text-primaryDark dark:text-white">

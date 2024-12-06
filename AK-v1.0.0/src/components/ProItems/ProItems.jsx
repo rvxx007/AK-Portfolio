@@ -5,9 +5,9 @@ const ProItems = (prop) => {
   return (
     <>
     {item.proType===proType &&
-      <motion.div whileHover={{scale:1.1}} className="xl:w-[300px] group-[dd]  w-full bg-bgDark p-0 rounded-md shadow-xl gap-2 border-2 hover:border-primaryDark border-gray-800 font-bold flex flex-col justify-between items-center">
+      <motion.div whileHover={{scale:1.1}} className="md:w-[300px] group  w-full bg-bgDark p-0 rounded-md shadow-xl gap-2 border-2 hover:border-primaryDark border-gray-800 font-bold flex flex-col justify-between items-center">
 
-      <div className="flex flex-row xl:flex-col">
+      <div className="flex flex-col">
       <img className="w-[300px] h-[300px]" 
       src={import.meta.env.VITE_BE_BASE_URL+item.src} alt={item.title} />
       <div className="w-full flex p-2 text-wrap flex-col justify-center items-center">

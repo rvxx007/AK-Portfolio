@@ -19,7 +19,7 @@ const ak= useContext(AppContext);
             
             <motion.section 
             
-             className=" w-full xl:w-[50%] my-8">
+             className=" w-full xl:w-[50%] my-8 px-5">
                 <ProfileCard/>
             </motion.section>
 
