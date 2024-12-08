@@ -9,7 +9,7 @@ const ProItems = (prop) => {
 
       <div className="flex flex-col">
       <img className="w-[300px] h-[300px]" 
-      src={import.meta.env.VITE_BE_BASE_URL+item.src} alt={item.title} />
+      src={import.meta.env.VITE_BE_BASE_URL+item.icon} alt={item.title} />
       <div className="w-full flex p-2 text-wrap flex-col justify-center items-center">
       <h1 className="text-2xl">{item.title}</h1>
       {/* <p className=" font-semibold">{item.desc}</p> */}
