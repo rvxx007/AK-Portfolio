@@ -2,6 +2,7 @@ import express from 'express';
 const app = express();
 import dotenv from 'dotenv';
 dotenv.config({path:".env"});
+
 import mdb from './root/config/mdb.js';
 import akRouter from './root/routes/akRoute.js';
 
@@ -13,6 +14,8 @@ const PORT =  process.env.PORT || 2222 ;
 app.use(cors());
 app.use(express.json());
 app.use(express.static('./public'));
+// Set EJS as templating engine
+app.set("view engine", "ejs")
 
 // Multer storage configuration
 const storage = multer.diskStorage({
@@ -23,6 +26,8 @@ const storage = multer.diskStorage({
         cb(null, "img-"+Date.now() + '-' + file.originalname)
     }
 });
+
+
 
 //Multer Engine Setup
 const upload = multer({ storage });
@@ -55,7 +60,14 @@ app.post('/upload',upload.single('image'),async(req, res)=>{
 
 
     app.get('/',(req, res)=>{
-        res.status(200).send('Hello');
+        const data = {
+            name:"Akash Kawale",
+            desc:"This is a Backend Server for my Portfolio and it's personal server thats why its not available for everyone , please stay away dont try to access endpoints and try to get data.",
+            title:"Portfolio Backend Server"
+            }
+        res.render('/home/rv/Desktop/Workplace/Private/Portfolio/AK-Portfolio/server/root/views/index',{ data});
+
+        // res.status(200).send('Hello');
     })
     
     app.use('/api/v1/ak',akRouter);
@@ -63,5 +75,4 @@ app.post('/upload',upload.single('image'),async(req, res)=>{
 
 app.listen(PORT,()=>{
     console.log('Server is Running on the PORT = '+PORT);
-    
 })

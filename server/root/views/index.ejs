@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Kawale Portfolio Backend Server</title>
+    <%- include('./util.ejs') %> 
+</head>
+<body>
+    <main class="min-w-screen min-h-screen flex justify-center items-center flex-col overflow-hidden">
+        <section class="rounded-md shadow-lg p-5 border border-gray-200 flex flex-col justify-center items-center gap-5">
+
+        <div class="flex justify-center items-center gap-5 ">
+            <img class="rounded-full w-[100px] h-[100px]" src="./logo.png" alt="Logo">
+            <h1 class=" text-4xl font-bold"><%=data.name%></h1>
+        </div>
+
+        <div class="gap-2 flex flex-col justify-between items-start p-3 shadow-md rounded-md">
+            <h1 class="text-2xl font-bold"><%=data.title%></h1>
+            <p class="font-semibold text-gray-600"><%=data.desc %></p>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
